@@ -1,5 +1,5 @@
-var finances = [
-['Jan-2010', 867884],
+let finances = [
+['Jan-2010', 867884], 
 ['Feb-2010', 984655],
 ['Mar-2010', 322013],
 ['Apr-2010', -69417],
@@ -86,3 +86,44 @@ var finances = [
 ['Jan-2017', 138230],
 ['Feb-2017', 671099]
 ];
+
+
+
+//--------------------------------------------------------//
+
+console.log("Financial Analysis");
+
+console.log("---------------------------------");
+
+let totalMonths = finances.length;
+
+console.log("Total Months: " + finances.length);
+
+
+let netTotal = 0;
+let greatest = ["", 0];
+console.log("Current greatest: ", greatest);
+let least = ["" , Number.MAX_SAFE_INTEGER];
+console.log("Current least: ", least);
+
+for (let i=0; i<finances.length; i++) {
+    // console.log("finances[" + i + "]" + ": "  + finances[i] );
+    // console.log("finances[" + i + "][0]" + ": "  + finances[i][0] );
+    // console.log("finances[" + i + "][1]" + ": "  + finances[i][1] );
+    netTotal = netTotal +  finances[i][1];
+    if (finances[i][1] > greatest[1]) {
+        greatest = [finances[i][0] , finances[i][1]];
+        console.log("Current greatest: ", greatest);
+    }
+    if (finances[i][1] < least[1]) {
+        least = [finances[i][0] , finances[i][1]];
+        console.log("Current least: ", least);
+    }
+}
+
+console.log("Net Total: " + netTotal);
+
+console.log("aveChange: " + netTotal / totalMonths);
+
+console.log("Greatest Increase in Profits: " + greatest);
+console.log("Greatest Decrease in Losses: " + least);

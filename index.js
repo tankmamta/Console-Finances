@@ -100,10 +100,14 @@ let totalMonths = finances.length;
 console.log("Total Months: " + finances.length);
 
 
+
 let netTotal = 0;
 let greatest = ["", 0];
+
 //console.log("Current greatest: ", greatest);
+
 let least = ["" , Number.MAX_SAFE_INTEGER];
+
 //console.log("Current least: ", least);
 
 for (let i=0; i<finances.length; i++) {

@@ -102,9 +102,9 @@ console.log("Total Months: " + finances.length);
 
 let netTotal = 0;
 let greatest = ["", 0];
-console.log("Current greatest: ", greatest);
+//console.log("Current greatest: ", greatest);
 let least = ["" , Number.MAX_SAFE_INTEGER];
-console.log("Current least: ", least);
+//console.log("Current least: ", least);
 
 for (let i=0; i<finances.length; i++) {
     // console.log("finances[" + i + "]" + ": "  + finances[i] );
@@ -113,17 +113,17 @@ for (let i=0; i<finances.length; i++) {
     netTotal = netTotal +  finances[i][1];
     if (finances[i][1] > greatest[1]) {
         greatest = [finances[i][0] , finances[i][1]];
-        console.log("Current greatest: ", greatest);
+       // console.log("Current greatest: ", greatest);
     }
     if (finances[i][1] < least[1]) {
         least = [finances[i][0] , finances[i][1]];
-        console.log("Current least: ", least);
+       // console.log("Current least: ", least);
     }
 }
 
-console.log("Net Total: " + netTotal);
+console.log("Net Total: $" + netTotal);
 
-console.log("aveChange: " + netTotal / totalMonths);
+console.log("Average Change: $" + netTotal / finances.length);
 
-console.log("Greatest Increase in Profits: " + greatest);
-console.log("Greatest Decrease in Losses: " + least);
+console.log("Greatest Increase in Profits: $" + greatest);
+console.log("Greatest Decrease in Losses: $" + least);

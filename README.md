@@ -1,11 +1,11 @@
 # Console-Finances
 
-This Project Console-Finance is built purely using JavaScript,. I have created this using the knowledge i got during the classes and also some research that I had to do to get the final results. I have used For loop, if else statement to get the results.
+This Project Console-Finance is built purely using JavaScript,. I have created this using the knowledge i got during the classes and also some research that I had to do to get the final results. I have used For loop, if else statement to get the results. I have also used toFixed fuction to round the decimals to 2 digits.
 
 Installation
 What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
 
-You can view the webpage with the help of URL - ()
+You can view the webpage with the help of URL - (https://tankmamta.github.io/Console-Finances/)
 
 There is no need for installation
 

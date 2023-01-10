@@ -102,7 +102,9 @@ console.log("Total Months: " + finances.length);
 
 
 let netTotal = 0;
-let greatest = ["", 0];
+let greatest = ["" , 0];
+
+
 
 //console.log("Current greatest: ", greatest);
 
@@ -127,7 +129,13 @@ for (let i=0; i<finances.length; i++) {
 
 console.log("Net Total: $" + netTotal);
 
-console.log("Average Change: $" + netTotal / finances.length);
+let aveChange = netTotal / finances.length;
+
+//used tofixed function to round the decimal to 2 digits
+
+averageChange = aveChange.toFixed(2);
+
+console.log("Average Change: $" + averageChange);
 
 console.log("Greatest Increase in Profits: $" + greatest);
 console.log("Greatest Decrease in Losses: $" + least);
